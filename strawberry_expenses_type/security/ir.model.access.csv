@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_type_of_expenses,type.of.expenses,model_type_of_expenses,,1,1,1,1
+access_strawberry_expenses_type,strawberry.expenses.type,model_strawberry_expenses_type,,1,1,1,1
+access_straw_expenses_lines,straw.expenses.lines,model_straw_expenses_lines,,1,1,1,1

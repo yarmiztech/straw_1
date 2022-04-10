@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!--Adding a salary rule for loan-->
+	<data noupdate="0">
+
+        <record id="strawberry_expenses_type_seq" model="ir.sequence">
+            <field name="name">Strawberry Expenses</field>
+            <field name="code">strawberry.expenses.type</field>
+            <field name="prefix">STRAW/</field>
+            <field name="padding">3</field>
+            <field name="company_id" eval="False"/>
+        </record>
+	</data>
+</odoo>

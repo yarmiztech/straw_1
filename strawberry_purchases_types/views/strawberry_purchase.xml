@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="purchase_order_strawberry" model="ir.ui.view">
+        <field name="name">Purchase Order</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="purchase_type_cash"  widget="radio"/>
+                <field name="bank_journal_id" attrs="{'invisible': [('purchase_type_cash', '!=', 'bank')],'required': [('purchase_type_cash', '=', 'bank')]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
